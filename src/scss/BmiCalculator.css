@@ -1,0 +1,19 @@
+.bmi-calculator {
+  text-align: center;
+}
+.bmi-calculator h2 {
+  margin-bottom: 20px;
+}
+.bmi-calculator div {
+  margin-bottom: 15px;
+}
+.bmi-calculator div label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+.bmi-calculator div:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=BmiCalculator.css.map */

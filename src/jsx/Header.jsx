@@ -1,15 +1,16 @@
-import React from "react";
-
+import React from 'react';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
         <header>
             <nav>
                 <ul>
-                    <li><a href={"/"} >Home</a></li>
-                    <li><a href={"Bmi-Calculator"}>Bmi Calculator</a></li>
-                    <li><a href={"Products-Calories"}>Products Calories</a></li>
-                    <li><a href={"Contact"}>Contact</a></li>
+                    <li>< Link to="/">Home</Link></li>
+                    <li>< Link to="/Information">information</Link></li>
+                    <li>< Link to="/BmiCalculator">BMI Calculator</Link></li>
+                    <li>< Link to="/Products-Calories">Products Calories</Link></li>
+                    <li>< Link to="/Contact">Contact</Link></li>
                 </ul>
             </nav>
         </header>
