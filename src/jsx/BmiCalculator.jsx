@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const BmiCalculator = () => {
     const [weight, setWeight] = useState(0);
@@ -9,14 +9,15 @@ const BmiCalculator = () => {
         const calculateBmi = () => {
             if (height > 0 && weight > 0) {
                 const heightInMeter = height / 100
-                const bmiValue = weight / heightInMeter * heightInMeter;
+                const bmiValue = weight / (heightInMeter * heightInMeter);
                 return bmiValue.toFixed(2)
             }
+            return 0;
         }
 
 
     useEffect(() => {
-        setBmi(calculateBmi);
+        setBmi(calculateBmi());
     },[height,weight]);
 
 

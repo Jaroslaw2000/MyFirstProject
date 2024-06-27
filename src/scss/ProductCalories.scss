@@ -1,0 +1,44 @@
+.recipeList {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background: #ededed;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #555555;
+  font-family: Arial, sans-serif;
+}
+
+.list li {
+  margin-bottom: 20px;
+  padding: 10px 30px 30px ;
+  border: 1px solid #050505;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.recipe-name,
+.meal-name {
+  margin: 20px;
+  font-size: 23px;
+  color: #3a3737;
+}
+
+option {
+  padding: 10px;
+  justify-content: center;
+}
+
+.list img {
+  display: flex;
+  margin: 10px auto;
+  height: auto;
+}
