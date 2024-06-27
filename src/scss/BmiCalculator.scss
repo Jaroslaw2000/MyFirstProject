@@ -1,3 +1,7 @@
+.all {
+  display: block;
+}
+
 .bmi-calculator {
   display: flex;
   flex-direction: column;
@@ -12,30 +16,84 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
 
-  h2 {
-    margin-bottom: 20px;
-  }
+.bmi-calculator h2 {
+  margin-bottom: 20px;
+}
 
-  div {
-    margin-bottom: 15px;
-    width: 100%;
+.bmi-calculator div {
+  margin-bottom: 15px;
+  width: 100%;
+}
 
-    label {
-      display: inline-block;
-      width: 120px;
-      font-weight: bold;
-    }
+.bmi-calculator label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
 
-    input[type='number'] {
-      padding: 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-  }
+.bmi-calculator input[type='number'] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
 
-  div:last-child {
-    margin-bottom: 0;
+.photoBmiCalculator {
+  background-image: url('../assets/bmi-chart.gif');
+  height: 400px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 35px;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.photoBmiForChildren {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.photoBmiForChildren.forBoys {
+  background-image: url("../assets/siatka_waga_ch_mini.jpg");
+  width: 550px;
+  height: 700px;
+}
+
+.photoBmiForChildren.forGirls {
+  background-image: url("../assets/siatka_waga_dz_mini.jpg");
+  width: 550px;
+  height: 700px;
+}
+.bmiPhotoChildren{
+  display: flex;
+}
+.textBmiPhotoChildren{
+  margin: auto;
+  padding: 10px;
+  font-size: 33px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #636363;
+  box-shadow: 2px 2px 4px #616161;
+  border-radius: 10px;
+  max-width: 850px;
+}
+
+@media (max-width: 1150px){
+  .bmiPhotoChildren{
+    display: block;
   }
 }

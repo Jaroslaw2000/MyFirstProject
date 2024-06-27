@@ -9,7 +9,6 @@ const Header = () => {
                     <li>< Link to="/Information">Information</Link></li>
                     <li>< Link to="/BmiCalculator">BMI Calculator</Link></li>
                     <li>< Link to="/ProductCalories">Products Calories</Link></li>
-                    <li>< Link to="/Contact">Contact</Link></li>
                 </ul>
             </nav>
         </header>

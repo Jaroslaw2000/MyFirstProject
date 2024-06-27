@@ -54,6 +54,7 @@ const RecipeList = () => {
 
     return (
         <div>
+
             <form>
                 <select className="recipeList" value={selectedCategory} onChange={selectRecipe}>
                     <option value="">Wybierz opcję</option>

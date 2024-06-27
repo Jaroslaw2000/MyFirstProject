@@ -51,14 +51,14 @@
   font-family: Arial, sans-serif;
 }
 .info .header {
-  background: #ff0000;
+  background: #b6b5b5;
   padding: 20px;
-  border-radius: 30% 60% 30% 70%;
   text-align: center;
   justify-content: center;
-  height: 280px;
+  height: 200px;
   width: auto;
   box-shadow: 2px 2px 4px #000000;
+  border-radius: 0 0 10px 10px;
 }
 .info .header h1 {
   color: black;
@@ -67,21 +67,39 @@
   padding-top: 40px;
 }
 
-.foodInfo {
+.foodInfoD,
+.foodInfoC,
+.foodInfoA,
+.foodInfoB {
   width: auto;
   padding: 40px;
+  margin: 20px;
   font-size: 18px;
-  color: #232222;
+  color: #424040;
   line-height: 25px;
   background: #ffffff;
-}
-
-.foodInfo p {
   text-align: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  background: rgba(234, 234, 234, 0.37);
+  box-shadow: 2px 2px 4px #000000;
+}
+.foodInfoD .foodInfo li,
+.foodInfoC .foodInfo li,
+.foodInfoA .foodInfo li,
+.foodInfoB .foodInfo li {
+  max-width: 700px;
 }
 
-.foodInfo li {
-  max-width: 700px;
+.foodInfoD h1,
+.foodInfoA h1,
+.foodInfoC h1,
+.foodInfoB h1 {
+  font-size: 27px;
+}
+
+.all {
+  display: block;
 }
 
 .bmi-calculator {
@@ -98,29 +116,89 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
 }
+
 .bmi-calculator h2 {
   margin-bottom: 20px;
 }
+
 .bmi-calculator div {
   margin-bottom: 15px;
   width: 100%;
 }
-.bmi-calculator div label {
+
+.bmi-calculator label {
   display: inline-block;
   width: 120px;
   font-weight: bold;
 }
-.bmi-calculator div input[type=number] {
+
+.bmi-calculator input[type=number] {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
 }
-.bmi-calculator div:last-child {
-  margin-bottom: 0;
+
+.photoBmiCalculator {
+  background-image: url("../assets/bmi-chart.gif");
+  height: 400px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 35px;
+  box-shadow: 2px 2px 4px #000000;
 }
 
+.photoBmiForChildren {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.photoBmiForChildren.forBoys {
+  background-image: url("../assets/siatka_waga_ch_mini.jpg");
+  width: 550px;
+  height: 700px;
+}
+
+.photoBmiForChildren.forGirls {
+  background-image: url("../assets/siatka_waga_dz_mini.jpg");
+  width: 550px;
+  height: 700px;
+}
+
+.bmiPhotoChildren {
+  display: flex;
+}
+
+.textBmiPhotoChildren {
+  margin: auto;
+  padding: 10px;
+  font-size: 33px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #636363;
+  box-shadow: 2px 2px 4px #616161;
+  border-radius: 10px;
+  max-width: 850px;
+}
+
+@media (max-width: 1150px) {
+  .bmiPhotoChildren {
+    display: block;
+  }
+}
 .recipeList {
   width: 100%;
   padding: 10px;
@@ -164,6 +242,49 @@ option {
   display: flex;
   margin: 10px auto;
   height: auto;
+}
+
+.home {
+  background-image: url(../assets/sport.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  margin: 10px auto;
+  margin-top: 100px;
+  max-width: 800px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #3a3737;
+  margin-top: 0;
+  padding: 10px;
+}
+
+.row {
+  text-align: center;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  margin: 10px auto;
+  max-width: 600px;
 }
 
 /*# sourceMappingURL=main.css.map */

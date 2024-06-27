@@ -8,14 +8,14 @@
   font-family: Arial, sans-serif;
 
   .header {
-    background: #ff0000;
+    background: #b6b5b5;
     padding: 20px;
-    border-radius: 30% 60% 30% 70%;
     text-align: center;
     justify-content: center;
-    height: 280px;
+    height: 200px;
     width: auto;
     box-shadow: 2px 2px 4px #000000;
+    border-radius: 0 0 10px 10px;
 
     h1{
       color: black;
@@ -25,19 +25,36 @@
     }
   }
 }
-.foodInfo{
+.foodInfoD,
+.foodInfoC,
+.foodInfoA,
+.foodInfoB{
   width: auto;
   padding:40px;
+  margin: 20px;
   font-size: 18px;
-  color: #232222;
+  color: #424040;
   line-height: 25px;
   background: #ffffff;
-}
-.foodInfo p{
   text-align: center;
-}
-.foodInfo li {
-  max-width: 700px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background: rgba(234, 234, 234, 0.37);
+  box-shadow: 2px 2px 4px #000000;
 
+
+  .foodInfo li {
+    max-width: 700px;
+
+  }
 }
+.foodInfoD h1,
+.foodInfoA h1,
+.foodInfoC h1,
+.foodInfoB h1{
+  font-size: 27px;
+}
+
+
+
 

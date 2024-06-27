@@ -52,25 +52,37 @@ const BmiCalculator = () => {
 
 
     return (
-        <div className="bmi-calculator">
-            <h2>BMI Calculator</h2>
-            <div>
-                <label>Weight (kg): </label>
-                <input type="number" value={weight} onChange={handleWeightChange} />
-            </div>
-            <div>
-                <label>Height (cm): </label>
-                <input type="number" value={height} onChange={handleHeightChange} />
-            </div>
-            <div>
-                <label>BMI: </label>
-                <span>{bmi}</span>
-            </div>
-            <div>
-                <label>Interpretacja: </label>
-                <br />
-                <span>{interpretation} </span>
+        <div className="all">
+            <div className="bmi-calculator">
+                <h2>BMI Calculator</h2>
+                <div>
+                    <label>Weight (kg): </label>
+                    <input type="number" value={weight} onChange={handleWeightChange}/>
+                </div>
+                <div>
+                    <label>Height (cm): </label>
+                    <input type="number" value={height} onChange={handleHeightChange}/>
+                </div>
+                <div>
+                    <label>BMI: </label>
+                    <span>{bmi}</span>
+                </div>
 
+                <div>
+                    <label>Interpretacja: </label>
+                    <br/>
+                    <span>{interpretation} </span>
+                </div>
+
+            </div>
+
+            <div className="photoBmiCalculator"></div>
+            <div className="textBmiPhotoChildren">
+            <p>To są siatki centylowe dla dzieci z których oblicza się ich BMI </p>
+        </div>
+            <div className="bmiPhotoChildren">
+                <div className="photoBmiForChildren forBoys"></div>
+                <div className="photoBmiForChildren forGirls"></div>
             </div>
         </div>
     );
