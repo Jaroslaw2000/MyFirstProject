@@ -1,9 +1,11 @@
 
 const Information = () => {
+
+
     return (
         <div className="info">
             <header className="header">
-                <h1>Naucz się więcej o jedzeniu</h1>
+                <h1>Kilka Podstawowych Rad I Informacji </h1>
 
             </header>
             <section className={"foodInfoA"}>
