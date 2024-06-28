@@ -7,6 +7,7 @@ podstawowe informacje o żywieniu oraz listę przepisów i posiłków.
 - **Kalkulator BMI**: Obliczanie Wskaźnika Masy Ciała (BMI) na podstawie wzrostu i wagi.
 - **Informacje o Żywieniu**: Dostęp do podstawowych informacji na temat żywienia i zdrowego odżywiania.
 - **Kalorie Produktów**: Przeglądanie listy produktów i posiłków.
+- **Api**: W tej stronie używane jest API ktore pobiera dane z innych serwerów.
 
 ## Jak zainstalować wszystkie potrzebne biblioteki?
 Żeby zacząć pracować musisz:
